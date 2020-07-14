@@ -22,7 +22,7 @@ int main(int argc, char const *argv[]) {
         scanf("%f", &desiredPricePerShare);
         float amountToBuy = (startVol*(startPricePerShare-desiredPricePerShare))/(desiredPricePerShare - finalPricePerShare);
         printf("The equation evaluated was: %s\n", "[startVol*(startPricePerShare-desiredPricePerShare)]/[desiredPricePerShare - finalPricePerShare]");
-        printf("To reach %.2f, buy %.2f shares at $%.2f per share\n", desiredPricePerShare, amountToBuy, startPricePerShare);
+        printf("To reach %.2f, buy %.2f shares at $%.2f per share\n", desiredPricePerShare, amountToBuy, finalPricePerShare);
         printf("Enter a q to quit or an r to restart this program: ");
         scanf("%s", str);
         if(str[0]=='r'){
